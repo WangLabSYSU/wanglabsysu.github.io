@@ -166,27 +166,9 @@
                     <div class="tags">
                         <i class="fa fa-tags"></i>
                         <div class="links">
-                            <!-- <p>
-                                RNA修饰
-                            </p>
-                            <p>
-                                深度学习
-                            </p>
-                            <p>
-                                生物信息学算法开发
-                            </p> -->
-                            <span>
-                                m<sup>6</sup>A RNA修饰
-                            </span>
-                            <span>
-                                分子医学
-                            </span>
-                            <span>
-                                算法开发
-                            </span>
-                            <span>
-                                深度学习
-                            </span>
+                            <span class="tag">RNA修饰</span>
+                            <span class="tag">深度学习</span>
+                            <span class="tag">生物信息学算法开发</span>
                             <!-- <a href="https://lednerb.github.io/bilberry-hugo-theme/tags/ideas/">
                                 Ideas
                             </a>
@@ -204,6 +186,40 @@
                         </div>
                     </div> -->
                 </div>
+                <style>
+                    /* 标签样式 */
+                    .tags {
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    .tags i {
+                        margin-right: 15px;
+                        color: #7f8c8d;
+                    }
+                    
+                    .links {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                    }
+                    
+                    .tag {
+                        display: inline-block;
+                        margin-right: 10px;
+                        color: #2c3e50;
+                        font-weight: 500;
+                        padding: 5px 0;
+                    }
+                    
+                    /* 使用CSS伪元素添加斜杠分隔符 */
+                    .tag:not(:last-child):after {
+                        content: "/";
+                        margin-left: 10px;
+                        color: #95a5a6;
+                        font-weight: normal;
+                    }
+                </style>
             </article>
         </div>
 
