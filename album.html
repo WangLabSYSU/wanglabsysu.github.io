@@ -3,7 +3,9 @@
 	<head>
 		<meta charset=UTF-8>
 		<meta name=viewport content="width=device-width,initial-scale=1">
-		<title>首页 | g1eny0ung's Blog</title>
+		<title>
+			Wang Lab &vert; News & Album
+		</title>
 		<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>">
 		</link>
 		<link rel=canonical href=./album.html>
@@ -25,6 +27,74 @@
 		<link rel=stylesheet href=./css/output.min.css>
 		<link rel=stylesheet href=./css/custom.css>
 		<script defer src=./js/cdn.min.js integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin=anonymous></script>
+		<script>
+			// 初始化 darkMode store
+			document.addEventListener('alpine:init', () => {
+				Alpine.store('darkMode', {
+					// 获取当前主题偏好
+					getPreferredTheme() {
+						if (typeof window === 'undefined') return 'light';
+						const stored = localStorage.getItem('theme');
+						if (stored) return stored;
+						return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+					},
+
+					// 当前主题状态
+					theme: 'light',
+
+					// 初始化
+					init() {
+						this.theme = this.getPreferredTheme();
+						this.applyTheme();
+						// 监听系统主题变化
+						window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+							if (!localStorage.getItem('theme')) {
+								this.theme = e.matches ? 'dark' : 'light';
+								this.applyTheme();
+							}
+						});
+					},
+
+					// 应用主题
+					applyTheme() {
+						if (this.theme === 'dark') {
+							document.documentElement.classList.add('dark');
+						} else {
+							document.documentElement.classList.remove('dark');
+						}
+						localStorage.setItem('theme', this.theme);
+					},
+
+					// 切换主题
+					toggle(mode) {
+						if (mode === 'auto') {
+							localStorage.removeItem('theme');
+							this.theme = this.getPreferredTheme();
+						} else {
+							this.theme = mode === 'y' ? 'dark' : 'light';
+						}
+						this.applyTheme();
+					},
+
+					// 获取当前显示的图标名称
+					icon() {
+						if (this.theme === 'dark') return 'moon';
+						if (this.theme === 'light') return 'sunny';
+						return 'desktop';
+					},
+
+					// 用于 HTML 的 class
+					class() {
+						return this.theme === 'dark' ? 'dark' : '';
+					},
+
+					// 用于 HTML 的 data-theme
+					theme() {
+						return this.theme;
+					}
+				});
+			});
+		</script>
 	</head>
 	<body x-data="{flip: false, }">
 		<div id=dream-global-bg></div>
