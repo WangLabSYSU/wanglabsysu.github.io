@@ -19,11 +19,11 @@
 		<meta property="og:locale" content="zh_Hans">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="https://g1en.site/img/global-background.jpg">
-		<meta name=twitter:card content="summary_large_image">
+		<!-- <meta name=twitter:card content="summary_large_image">
 		<meta name=twitter:image content="https://g1en.site/img/global-background.jpg">
 		<meta name=twitter:title content="g1eny0ung's Blog">
 		<meta name=twitter:description content="The life record of g1eny0ung is presented here.">
-		<meta name=twitter:site content="@g1eny0ung">
+		<meta name=twitter:site content="@g1eny0ung"> -->
 		<link rel=stylesheet href=./css/output.min.css>
 		<link rel=stylesheet href=./css/custom.css>
 		<script defer src=./js/cdn.min.js crossorigin=anonymous></script>
@@ -101,12 +101,16 @@
 		<nav x-data="{ isSticky: false }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })" class="sticky top-0 z-30 mt-4 lg:mt-8 py-4" :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
 			<div class="container flex justify-between px-4">
 				<section class="flex items-center gap-4">
-					<div class="avatar cursor-pointer hover:avatar-online" title="Wang Lab Logo">
-						<div class="h-10 rounded-full"><img src=./figure/logo.png alt="Wang Lab"></div>
+					<div class="avatar cursor-pointer hover:avatar-online" title="Welcome to our lab!">
+						<div class="h-10 rounded-full"><img src=./figure/zssom.jpg alt="zssom"></div>
 					</div>
 					<div>
-						<a href=https://wanglabsysu.github.io/index.html class="text-lg font-semibold cursor-pointer">News & Album of Wang Lab</a>
-						<div class="text-base-content/60 text-sm">与其感慨路难行，不如马上出发。</div>
+						<a href=https://wanglabsysu.github.io/index.html class="text-lg font-semibold cursor-pointer">
+							News & Album of Wang Lab
+						</a>
+						<div class="text-base-content/60 text-sm">
+							Treasure the moments.
+						</div>
 					</div>
 				</section>
 				<div class="dropdown dropdown-end sm:hidden">
@@ -114,18 +118,7 @@
 						<ion-icon name=menu class=text-2xl></ion-icon>
 					</div>
 					<ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
-						<li>
-							<a class="group inline-flex items-center p-2 cursor-pointer" href=/search title=搜索>
-								<ion-icon name=search></ion-icon>
-								搜索
-							</a>
-						</li>
-						<li>
-							<a class="inline-flex items-center p-2 cursor-pointer" href=https://github.com/g1eny0ung target=_blank title=GitHub>
-								<ion-icon name=logo-github></ion-icon>
-								GitHub
-							</a>
-						</li>
+
 						<li>
 							<a class="inline-flex items-center p-2 cursor-pointer" href=https://wanglabsysu.github.io/index.html title=Home>
 								<ion-icon name=home></ion-icon>
@@ -144,40 +137,27 @@
 								Publications
 							</a>
 						</li>
+						<li>
+							<a class="inline-flex items-center p-2 cursor-pointer" href=./github.html target=_blank title=GitHub>
+								<ion-icon name=logo-github></ion-icon>
+								GitHub
+							</a>
+						</li>
 					</ul>
 				</div>
 				<section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
-					<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/search title=搜索>
-						<ion-icon class=group-hover:text-primary-content name=search></ion-icon>
-					</a>
 					<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=https://github.com/g1eny0ung target=_blank title=GitHub>
 						<ion-icon class=group-hover:text-primary-content name=logo-github></ion-icon>
 					</a>
-					<div class="dropdown dropdown-end dropdown-hover">
-						<div tabindex=0 role=button class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
-							<ion-icon class="group-hover:text-primary-content text-xl" name=menu></ion-icon>
-						</div>
-						<ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-xl">
-							<li>
-								<a class="inline-flex items-center p-2 cursor-pointer" href=https://wanglabsysu.github.io/index.html title=Home>
-									<ion-icon name=home></ion-icon>
-									Home
-								</a>
-							</li>
-							<li>
-								<a class="inline-flex items-center p-2 cursor-pointer" href=https://wanglabsysu.github.io/team.html title=Team>
-									<ion-icon name=people></ion-icon>
-									Team
-								</a>
-							</li>
-							<li>
-								<a class="inline-flex items-center p-2 cursor-pointer" href=https://wanglabsysu.github.io/publications.html title=Publications>
-									<ion-icon name=pricetags></ion-icon>
-									Publications
-								</a>
-							</li>
-						</ul>
-					</div>
+					<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=https://wanglabsysu.github.io/index.html title=Home>
+						<ion-icon class=group-hover:text-primary-content name=home></ion-icon>
+					</a>
+					<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=https://wanglabsysu.github.io/team.html title=Team>
+						<ion-icon class=group-hover:text-primary-content name=people></ion-icon>
+					</a>
+					<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=https://wanglabsysu.github.io/publications.html title=Publications>
+						<ion-icon class=group-hover:text-primary-content name=pricetags></ion-icon>
+					</a>
 				</section>
 			</div>
 		</nav>
