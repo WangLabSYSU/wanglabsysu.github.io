@@ -27,22 +27,51 @@
     </link>
     <link rel="canonical" href="https://wanglabsysu.github.io/index.html"> <!-- 指定该页面的“权威 URL”，避免重复内容被搜索引擎惩罚 -->
     <link id="theme-css" rel="stylesheet" href="https://lednerb.github.io/bilberry-hugo-theme/theme.css" media="screen">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body class="bilberry-hugo-theme">
     <nav> <!--导航区域容器-->
         <div class="container"> <!--内容容器-->
             <ul class="topnav"> <!--主导航链接-->
-                <li><a href="./index.html"> Home </a></li>
-                <li><a href="./team.html" target="_blank"> Team </a></li>
-                <li><a href="./publications.html" target="_blank"> Publications </a></li>
-                <li><a href="./album.html" target="_blank"> News & Album </a></li>
+                <li>
+                    <a href="./index.html">
+                        <span class="icon">
+                            <ion-icon name="home"></ion-icon>
+                        </span>
+                        &nbsp;Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./team.html" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="people"></ion-icon>
+                        </span>
+                        &nbsp;Team
+                    </a>
+                </li>
+                <li>
+                    <a href="./publications.html" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="pricetags"></ion-icon>
+                        </span>
+                        &nbsp;Publications
+                    </a>
+                </li>
+                <li>
+                    <a href="./album.html" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="albums"></ion-icon>
+                        </span>
+                        &nbsp;News & Album
+                    </a>
+                </li>
             </ul>
-            <div id="search-box" class="search"> <!--提供站内搜索功能-->
-                <i class="fas fa-search"></i> <!--Font Awesome 的搜索图标-->
+            <!-- <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
                 <input id="search" type="text" placeholder="Search ...">
-                <!--<input type="text"> 允许用户输入关键词，placeholder="Search ..." 提供提示文字。-->
-            </div>
+            </div> -->
         </div>
     </nav>
     
@@ -63,21 +92,21 @@
             <div class="titles">
                 <h3 class="title">
                     <a href="https://zssom.sysu.edu.cn/teacher/wangjinkai" target=_blank>
-                        <b>王金凯博士</b>
+                        <b>Jinkai WANG, Ph.D.</b>
                     </a>
                 </h3>
-                <span class="subtitle">中山大学中山医学院教授、博士生导师</span>
+                <span class="subtitle"> Professor and Doctoral Supervisor <br> at Zhongshan School of Medicine, Sun Yat-sen University</span>
             </div>
-            <div class="selectors">
+            <!-- <div class="selectors">
                 <div class="languages">
-                    <a href="./index.html" class="active">
+                    <a href="./index.html">
                         中文
                     </a>
-                    <a href="./index_en.html">
+                    <a href="./index_en.html" class="active">
                         &nbsp; EN
                     </a>
                 </div>  
-            </div>
+            </div> -->
             <div class="toggler">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
@@ -94,12 +123,7 @@
                 <div class="content">
                     <p>
                         <!-- <b> -->
-                            王金凯教授是中山大学引进的教授，导师资格为博士生导师。
-                            2005年毕业于武汉大学生命科学学院，获得理学学士学位。
-                            2010年毕业于中国科学院昆明动物研究所，获得遗传学博士学位（师从宿兵研究员）。
-                            2010年至2016年分别在美国爱荷华大学（2010至2012年）和加州大学洛杉矶分校（2013至2016年）
-                            邢毅教授实验室从事生物信息学方向博士后研究。2016年获聘中山大学引进人才。
-                            2018年入选广东省珠江人才计划“青年拔尖人才”。
+                        Professor Jinkai Wang is a faculty member recruited by Sun Yat-sen University and is accredited as a doctoral supervisor. He obtained his Bachelor of Science degree from the School of Life Sciences at Wuhan University in 2005. In 2010, he earned his Ph.D. in Genetics from the Kunming Institute of Zoology, Chinese Academy of Sciences, under the supervision of Researcher Bing Su. From 2010 to 2016, he conducted postdoctoral research in bioinformatics in Professor Yi Xing’s laboratory at the University of Iowa (2010–2012) and the University of California, Los Angeles (2013–2016). In 2016, he was appointed as a talent recruit by Sun Yat-sen University. In 2018, he was selected for the “Young Top-Notch Talent” program under the Guangdong Province Pearl River Talent Plan.
                         <!-- </b> -->
                     </p>
                 </div>
@@ -125,7 +149,7 @@
                     <h1 class="article-title">
                         <p>
                             <b>
-                                实验室简介
+                                Welcome to Our Lab!
                             </b>
                         </p>
                     </h1>
@@ -140,20 +164,30 @@
                         </span>
                     </div> -->
                     <p>
-                        实验室成立以来，已经在<b>Molecular Cell</b>（2篇）、<b>Nature Chemical Biology</b>、
-                        <b>Nature Communications</b>（2篇）及<b>Nucleic Acids Research</b>（2篇）等学术期刊上发表论文13篇，
-                        除两篇综述论文外，其余11篇论文IF均高于10。
+                        Since its establishment, our lab has published 13 research articles 
+                        in prestigious academic journals such as <i><b>Molecular Cell</b></i> (2 papers), 
+                        <i><b>Nature Chemical Biology</b></i>, <i><b>Nature Communications</b></i> (2 papers), 
+                        and <i><b>Nucleic Acids Research</b></i> (2 papers). 
+                        With the exception of two review articles, 
+                        each of the remaining 11 papers has an impact factor (IF) higher than 10.
                     </p>
                     <p>
-                        实验室主要研究兴趣是：利用第二代以及第三代高通量测序技术结合生物信息学、
-                        基因组学和分子生物学的方法，开发m<sup>6</sup>A RNA修饰的检测技术和算法，
-                        研究m<sup>6</sup>A RNA修饰的调控模式和机理，以及m<sup>6</sup>A RNA修饰在干细胞生长、
-                        肿瘤进展等重大生理病理过程中的作用。
+                        The lab’s primary research focus lies in leveraging second- and third-generation 
+                        high-throughput sequencing technologies, combined with bioinformatics, genomics, 
+                        and molecular biology approaches, to develop detection techniques and algorithms 
+                        for m<sup>6</sup>A RNA modification. 
+                        We investigate the regulatory mechanisms and patterns of m<sup>6</sup>A RNA modification, 
+                        as well as its roles in critical physiological and pathological processes 
+                        such as stem cell growth and tumor progression.
                     </p>
                     <p>
-                        实验室采用<b>“干湿结合”</b>的方式开展基础医学研究，通过算法开发、实验技术和组学技术开发等手段，
-                        从新的维度解析RNA修饰的模式，从新的角度提出前沿科学问题，
-                        并通过严谨的生物化学实验和组学分析深入阐明科学问题。
+                        Employing a <b>"dry and wet lab integrated"</b> strategy, the laboratory conducts 
+                        fundamental medical research by developing computational algorithms, 
+                        experimental techniques, and omics technologies. 
+                        This allows us to decipher RNA modification patterns from novel dimensions, 
+                        propose cutting-edge scientific questions from fresh perspectives, 
+                        and rigorously elucidate these questions through biochemical experiments 
+                        and omics analysis.
                     </p>
                     <!-- <p>
                         Please use the following guidelines if you want to start a discussion:
@@ -170,9 +204,9 @@
                     <div class="tags">
                         <i class="fa fa-tags"></i>
                         <div class="links">
-                            <span class="tag">m<sup>6</sup>A RNA修饰</span>
-                            <span class="tag">深度学习</span>
-                            <span class="tag">生物信息学算法开发</span>
+                            <span class="tag">RNA Modification</span>
+                            <span class="tag">Deep Learning </span>
+                            <span class="tag">Bioinformatics</span>
                             <!-- <a href="https://lednerb.github.io/bilberry-hugo-theme/tags/ideas/">
                                 Ideas
                             </a>
@@ -265,31 +299,31 @@
     <footer>
         <div class="container">
             <div class="recent-posts">
-                <strong><b>实验室最近的工作</b></strong>
+                <strong><b>Latest Works</b></strong>
                 <ul>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/40593665/" target=_blank>
-                            <b>Nat Commun.</b> Isoform characterization of m<sup>6</sup>A in single cells identifies its role in RNA surveillance (2025 Jul 1)
+                            <b><i>Nat Commun.</i></b> Isoform characterization of m<sup>6</sup>A in single cells identifies its role in RNA surveillance (2025 Jul 1)
                         </a>
                     </li>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/40404899/" target=_blank>
-                            <b>Nat Chem Biol.</b> Nuclear m<sup>6</sup>A modification regulates satellite transcription and chromosome segregation (2025 May 22)
+                            <b><i>Nat Chem Biol.</i></b> Nuclear m<sup>6</sup>A modification regulates satellite transcription and chromosome segregation (2025 May 22)
                         </a>
                     </li>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/40101711/" target=_blank>
-                            <b>Mol Cell.</b> Spatial control of m<sup>6</sup>A deposition on enhancer and promoter RNAs through co-acetylation of METTL3 and H3K27 on chromatin (2025 Apr 3)
+                            <b><i>Mol Cell.</i></b> Spatial control of m<sup>6</sup>A deposition on enhancer and promoter RNAs through co-acetylation of METTL3 and H3K27 on chromatin (2025 Apr 3)
                         </a>
                     </li>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/39922195/" target=_blank>
-                            <b>Mol Cell.</b> Single-molecule m<sup>6</sup>A detection empowered by endogenous labeling unveils complexities across RNA isoforms (2025 Mar 20)
+                            <b><i>Mol Cell.</i></b> Single-molecule m<sup>6</sup>A detection empowered by endogenous labeling unveils complexities across RNA isoforms (2025 Mar 20)
                         </a>
                     </li>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/38796701/" target=_blank>
-                            <b>Mol Ther.</b> Decoding the specificity of m<sup>6</sup>A RNA methylation and its implication in cancer therapy (2024 Aug 7)
+                            <b><i>Mol Ther.</i></b> Decoding the specificity of m<sup>6</sup>A RNA methylation and its implication in cancer therapy (2024 Aug 7)
                         </a>
                     </li>
                 </ul>
@@ -315,23 +349,27 @@
                     <a href="https://twitter.com/TheRealLednerb" target="_blank" rel="me"><em class="fab fa-twitter"></em></a>
                     <a href="https://github.com/Lednerb" target="_blank" rel=""><em class="fab fa-github"></em></a> -->
                     <strong><b>
-                        联系我们
+                        Contact us
                     </b></strong>
-                    <b>邮箱：</b>wangjk@mail.sysu.edu.cn<br>
-                    <b>地址：</b>广东省广州市越秀区中山二路74号中山大学广州校区北校园医学科技楼631<br>
+                    <b>Email：</b>wangjk@mail.sysu.edu.cn<br>
+                    <b>Address：</b>
+                    Room 631, Medical Science and Technology Building<br>
+                    Guangzhou North Campus, Sun Yat-sen University<br>
+                    74 Zhongshan No.2 Road, Yuexiu District<br>
+                    Guangzhou City, Guangdong Province, China<br>
                 </div>
 
-                <div class="languages">
+                <!-- <div class="languages">
                     <strong><b>
-                        语言切换
+                        Other languages
                     </b></strong>
-                    <a href="./index.html" class="active">
+                    <a href="./index.html">
                         中文
                     </a>
-                    <a href="./index_en.html">
+                    <a href="./index_en.html" class="active">
                         EN
                     </a>  
-                </div>
+                </div> -->
                 <!-- <div class="archive">
                     <a href="https://lednerb.github.io/bilberry-hugo-theme/archive/">
                         <strong>
@@ -347,7 +385,8 @@
         <div class="container">
             <div class="copyright">
                 <p>
-                    &copy; 2025 Wang Lab. 
+                    &copy; 2025 Wang Lab. <br>
+                    🌱
                     <a href="mailto:wangjk@mail.sysu.edu.cn" class="mail-link">
                         wangjk@mail.sysu.edu.cn
                     </a>
@@ -355,13 +394,14 @@
             </div>
             <div class="author">
                 <p>
-                    <a href="https://www.sysu.edu.cn/" target="_blank">
-                        中山大学 
+                    Department of Histoembryology and Cell Biology, <br>
+                    <a class=hover:underline href="https://zssom.sysu.edu.cn/" target="_blank">
+                        Zhongshan School of Medicine
                     </a>
-                    <a href="https://zssom.sysu.edu.cn/" target="_blank">
-                        中山医学院
+                    , 
+                    <a class=hover:underline href="https://www.sysu.edu.cn/" target="_blank">
+                        Sun Yat-sen University
                     </a>
-                    医学信息学教研室
                 </p>
             </div>
         </div>
