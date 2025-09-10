@@ -97,10 +97,6 @@
 		</script>
 	</head>
 	<body x-data>
-
-
-
-		
 		<div id=dream-global-bg></div>
 		<nav x-data="{ isSticky: false }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })" class="sticky top-0 z-30 mt-4 lg:mt-8 py-4" :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
 			<div class="container flex justify-between px-4">
@@ -164,38 +160,6 @@
 				</section>
 			</div>
 		</nav>
-
-        <nav class="navbar level">
-            <div class="navbar-brand">
-                <!-- <a class="nav-item" href="https://natarajmb.github.io/charaka-hugo-theme"> -->
-                    <h1 class="title is-3">Recent Publications of Wang Lab</h1>
-                <!-- </a> -->
-            </div>
-            <div class="navbar-menu has-text-centered is-active">
-                <div class="navbar-end is-centered">
-                    <a href="https://wanglabsysu.github.io/index.html">
-                        <span class="icon">
-                            <ion-icon name="home"></ion-icon>
-                        </span>
-                    </a>
-                    <a href="https://wanglabsysu.github.io/index.html/team.html">
-                        <span class="icon">
-                            <ion-icon name="people"></ion-icon>
-                        </span>
-                    </a>
-                    <a href="https://wanglabsysu.github.io/album.html">
-                        <span class="icon">
-                            <ion-icon name="albums"></ion-icon>
-                        </span>
-                    </a>
-                    <a href="./github.html">
-                        <span class="icon">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </nav>
 
 		<!-- 主内容区域 -->
 		<div class="container">
